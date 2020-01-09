@@ -1,0 +1,120 @@
+1.  ls
+[rynprdt@192 ~]$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+[rynprdt@192 ~]$
+
+2. cat 
+[rynprdt@192 ~]$ cat > tes.txt
+ini hanya tes
+
+3.  ls -l
+[rynprdt@192 ~]$ ls -l
+total 32
+drwxr-xr-x. 2 rynprdt rynprdt 4096 Jan  7 14:23 Desktop
+drwxr-xr-x. 2 rynprdt rynprdt 4096 Jan  7 14:23 Documents
+rwxr-xr-x. 2 rynprdt rynprdt 4096 Jan  7 15:54 Downloads
+drwxr-xr-x. 2 rynprdt rynprdt 4096 Jan  7 14:23 Music
+drwxr-xr-x. 2 rynprdt rynprdt 4096 Jan  7 14:23 Pictures
+drwxr-xr-x. 3 rynprdt rynprdt 4096 Jan  7 16:27 Public
+drwxr-xr-x. 2 rynprdt rynprdt 4096 Jan  7 14:23 Templates
+-rw-rw-r--. 1 rynprdt rynprdt    0 Jan  8 13:45 tes.txt
+drwxr-xr-x. 2 rynprdt rynprdt 4096 Jan  7 14:23 Videos
+[rynprdt@192 ~]$ 
+
+4.  ls -a 
+[rynprdt@192 ~]$ ls -a
+.              .bash_profile  Desktop    .local    .pki       Videos
+..             .bashrc        Documents  .mozilla  Public     .vscode
+.bash_history  .cache         Downloads  Music     Templates
+.bash_logout   .config        .esd_auth  Pictures  tes.txt
+[rynprdt@192 ~]$ 
+
+5.  [rynprdt@192 ~]$ which
+Usage: /usr/bin/which [options] [--] COMMAND [...]
+Write the full path of COMMAND(s) to standard output.
+
+  --version, -[vV] Print version and exit successfully.
+  --help,          Print this help and exit successfully.
+  --skip-dot       Skip directories in PATH that start with a dot.
+  --skip-tilde     Skip directories in PATH that start with a tilde.
+  --show-dot       Don't expand a dot to current directory in output.
+  --show-tilde     Output a tilde for HOME directory for non-root.
+  --tty-only       Stop processing options on the right if not on tty.
+  --all, -a        Print all matches in PATH, not just the first
+  --read-alias, -i Read list of aliases from stdin.
+  --skip-alias     Ignore option --read-alias; don't read stdin.
+  --read-functions Read shell functions from stdin.
+  --skip-functions Ignore option --read-functions; don't read stdin.
+
+Recommended use is to write the output of (alias; declare -f) to standard
+input, so that which can show aliases and shell functions. See which(1) for
+examples.
+
+If the options --read-alias and/or --read-functions are specified then the
+output can be a full alias or function definition, optionally followed by
+the full path of each command used inside of those.
+
+Report bugs to <which-bugs@gnu.org>.
+[rynprdt@192 ~]$ 
+
+6.  history  
+[rynprdt@192 ~]$ history
+    1  sudo dnf install git
+    2  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    3  sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+    4  sudo dnf check-update
+    5  sudo dnf install code
+    6  curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+    7  yum install gcc-c++ make
+    8  yum groupinstall 'Development Tools'
+    9  curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+   10  yum install gcc-c++ make
+   11  sudo yum install gcc-c++ make
+   12  ls
+   13  mkdir
+   14  cls
+   15  ls
+   16  cat > tes.txt
+   17  ls
+   18  nano tes
+   19  rm
+   20  ls -l
+   21  ls -a
+   22  cd
+   23  chs -l
+   24  which
+   25  type
+   26  cat
+   27  history
+[rynprdt@192 ~]$ 
+
+7.  mkdir 
+[rynprdt@192 ~]$ mkdir vue
+[rynprdt@192 ~]$ ls
+Desktop    Downloads  Pictures  Templates  Videos
+Documents  Music      Public    tes.txt    vue
+
+8.  rmdir
+[rynprdt@192 ~]$ rmdir vue/
+[rynprdt@192 ~]$ ls
+Desktop    Downloads  Pictures  Templates  Videos
+Documents  Music      Public    tes.txt
+
+9.  clear
+[rynprdt@192 ~]$ mkdir vue
+[rynprdt@192 ~]$ ls
+Desktop    Downloads  Pictures  Templates  Videos
+Documents  Music      Public    tes.txt    vue
+[rynprdt@192 ~]$ clear
+
+10. ping
+[rynprdt@192 ~]$ ping google.com
+ls
+PING google.com (74.125.24.139) 56(84) bytes of data.
+64 bytes from 74.125.24.139 (74.125.24.139): icmp_seq=1 ttl=43 time=298 ms
+64 bytes from 74.125.24.139 (74.125.24.139): icmp_seq=2 ttl=43 time=61.4 ms
+64 bytes from 74.125.24.139 (74.125.24.139): icmp_seq=3 ttl=43 time=42.4 ms
+64 bytes from 74.125.24.139 (74.125.24.139): icmp_seq=4 ttl=43 time=51.8 ms
+64 bytes from 74.125.24.139 (74.125.24.139): icmp_seq=5 ttl=43 time=287 ms
+64 bytes from 74.125.24.139 (74.125.24.139): icmp_seq=6 ttl=43 time=30.8 ms
+
