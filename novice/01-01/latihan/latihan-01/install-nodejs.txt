@@ -1,0 +1,3 @@
+// Using Fedora
+curl -sL https://rpm.nodesource.com/setup_13.x | sudo -E bash -
+sudo dnf install nodejs
